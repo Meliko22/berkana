@@ -1,0 +1,449 @@
+body {
+    background-color: #000000;
+}
+
+.contenedor{
+    display: grid;
+    background-color: #000000;
+    grid-template-areas:"header"
+                        "main"
+                        "aside"
+                        "section"
+                        "footer";
+    justify-content: center;
+
+}
+
+
+
+
+.logo{
+background-color: #000000;
+display: flex;
+width: 100px;
+margin-left: 50px;
+
+
+
+} 
+
+.logo img {
+    width: 150px;
+    height: 90px;
+    margin-right: 100px;
+    background-color: black;
+
+}
+
+header{
+    width: 425px;
+    display: flex;
+    grid-area: header;
+    background-color: #000000;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;  
+    padding: 8px ;
+    align-items: center;
+    border-bottom: black;
+
+}
+
+
+main{
+    width: 425px;
+    grid-area: main;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    vertical-align:super;
+    
+
+
+}
+
+aside{
+    width: 425px;
+    grid-area: aside;
+    text-align: center;
+}
+
+
+.section1 {
+    width: 425px;
+     grid-area: section;
+
+}
+
+.section1 img {
+    width: 425px;
+
+}
+
+
+footer {
+  
+    grid-area: footer;
+    width: 425px;
+    background-color: black;
+    color: #fffefd;
+    text-align: center;
+    align-content: center;
+    margin: 0%;
+ 
+    
+
+}
+
+
+    
+    .navegador li{
+    list-style-type:none;
+    text-align: center;
+    display: inline-block;
+    color: azure;
+    margin-left: -40px;
+    flex-direction: column;    
+    }
+    
+    .navegador a{
+    text-decoration-line: none ;
+    color: #fffefd;
+    font-size: 15px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif; 
+    flex-direction: column;
+
+      
+    }
+
+    .navegador a:hover{
+
+        color: #5ab34e;
+        font-size: 25px;
+    }
+
+
+
+    .nosotros div {
+    background-image: url("img/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fffefd;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    width: 425px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+
+        }
+
+    .nosotros div p {
+
+        font-size: 20px;
+    }
+
+        table {
+            background-color: #7fffd4;
+            border: #000000;
+            border-style: double;
+         
+        }
+        
+        table th {
+            padding: 30px 30px 30px 30px;
+            font-size: 50px;
+            font-family: 'Quicksand', sans-serif;
+            
+        }
+        
+        table td {
+        
+            font-size: 40px;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+        
+        }
+        table img {
+            width: 250px;
+            height: 250px;
+        }
+        
+         
+        footer h1 {
+
+            color:#fffefd;
+            font-size: 7px;
+            text-align: center;
+            align-content: center;
+
+           
+        
+        }
+
+        .cuerpo{
+            background-color:black ;
+            display: column;
+            height: 200px;
+
+             }
+
+        .cuerpo h2{
+            background-color: black;
+            text-align: center;
+            color: #000000;
+            font-size: 10px;
+            font-family: 'Quicksand', sans-serif; 
+            text-size-adjust: auto;
+                 }
+
+        .cuerpo img{
+            height: 150px;
+            width: 100px;
+        }
+
+        .cuerpo div{
+
+            margin-left: 70px;
+            display: column;
+
+
+        }
+
+        aside img {
+
+            display: flex;
+            justify-content: center;
+     
+
+
+        }
+
+        .formulario {
+
+            background-image: url("img/aurora.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 200px 200px 200px 200px;
+            color: #fffefd;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .formulario form input, textarea {
+            color: #050505;
+            font-size: 15px;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .mayorista {
+
+            background-image: url("img/ruta.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 200px 200px 200px 200px;
+            color: #fffefd;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+            display: row;
+            justify-content: center;
+
+        }
+
+         @media (min-width:768px) 
+         {
+            .contenedor{
+                display: grid;
+                background-color: black;
+                grid-template-areas:"header header header"
+                                    "main main aside"
+                                    "section section section"
+                                    "footer footer footer ";
+                justify-content: center;
+            
+            }
+
+            header{
+                width: 1200px;
+                display: flex;
+                grid-area: header;
+                background-color: #000000;
+                text-align: center;
+                color: black;
+                border-bottom: 1px solid black;  
+                padding: 8px ;
+                align-items: center;
+                border-bottom: black;
+            
+            }
+            
+
+            
+            main{
+                width: 700px;
+                grid-area: main;
+                display: inline-block;
+                padding-top: 0.3125rem;
+                vertical-align:super;
+
+            }
+            
+            aside{
+                width: 340px;
+                grid-area: aside;
+                text-align: center;
+                background-color: black;
+                margin-left: -300px;
+            }
+            
+            
+            .section1 {
+                width: 1200px;
+                 grid-area: section;
+                 border: #000000 5px;
+            
+            }
+            
+            .section1 img {
+                width: 1200px;
+            
+            }
+            
+            
+            footer {
+                width: 425px;
+                grid-area: footer;
+                background-color: #000000 ;
+                padding: 15px 15px 15px 15px;
+                text-align: center;
+                align-content: center;
+                padding: 0%;
+            
+            }
+
+            .logo{
+                background-color: #000000;
+                display: flex;
+                width: 40px;
+                margin-left: 90px;
+                
+                } 
+                
+                .logo img {
+                    width: 150px;
+                    height: 90px;
+                    margin-left: 50px;
+                    background-color: black;
+                
+                }
+
+            .navegador li{
+                list-style-type:none;
+                text-align: center;
+                display: inline-block;
+                color: azure;
+                margin-left: 70px;
+                flex-direction: column;    
+                }
+                
+                .navegador a{
+                text-decoration-line: none ;
+                color: #fffefd;
+                font-size: 20px;
+                margin-right: 4px;
+                margin-left: 4px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: 'Quicksand', sans-serif; 
+                flex-direction: flex;
+            
+                  
+                }
+            
+                .navegador a:hover{
+            
+                    color: #5ab34e;
+                    font-size: 25px;
+
+                
+                }
+                footer h1 {
+
+                    color:#fffefd;
+                    text-align: center;
+                    font-size: 15px;
+
+        
+                   
+                
+                }
+        
+                .cuerpo{
+                    background-color: black;
+                    display: row;
+    
+        
+                     }
+        
+                .cuerpo h2{
+                    background-color: black;
+                    text-align: center;
+                    color: #000000;
+                    font-size: 15px;
+                    font-family: 'Quicksand', sans-serif; 
+                    text-size-adjust: auto;
+                         }
+        
+                .cuerpo img{
+                    height: 150px;
+                    width: 100px;
+                }
+        
+                .cuerpo div{
+        
+                    margin-left: 200px;
+                    display: row;
+                    align-items: center;
+            
+        
+        
+                }
+        
+                aside img {
+        
+                    display: flex;
+                    justify-content: start;
+                }
+
+                .nosotros div {
+                    background-image: url("img/nosotros.jpg");
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+                        color: #fffefd;
+                        font-size: 40px;
+                        font-family: 'Quicksand', sans-serif;
+                        width: 1025px;
+                        height: 500px;
+                        text-align: center;
+                        align-content: center;
+                    
+                            }
+                    
+                        .nosotros div p {
+                    
+                            font-size: 40px;
+                        }
+        
+        
+                }
+                
+        
