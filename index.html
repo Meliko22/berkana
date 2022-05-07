@@ -4,82 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="main.css">
-    <title>PRIMER PREENTREGA</title>
+    <title>Bootstrap</title>
 
 </head>
+
 <body>
-    
-    <div class="contenedor">
-
-        <header>
-            <div class="logo">
-                <a href="" ><img src="img/logo_berkana.jpeg" alt="logo Barkana"></a>
-                </div> 
-
-                <nav class="navegador"> 
-                       
-                        <ul> 
-                        <li>
-                                <a href="./index.html">Inicio</a> 
-                        </li> 
-                        <li>
-                            <a href="./pages/sobre_nosotros.html"> Nosotros</a>
-                        </li>
-
-                        <li>
-                                <a href="./pages/productos.html"> Productos</a> 
-                        </li> 
+    <header>
+      
+        <nav class="navbar navbar-dark dark nav nav-pills flex-column flex-sm-row">
+                <a class="flex-sm-fill text-sm-center nav-link" href="#"><img src="img/logo_berkana.jpeg" alt="logo_berkana" class="img-fluid rounded-bottom"></a>
+                <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="./pages/sobre_nosotros.html">Nosotros</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="./pages/productos.html">Productos</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="./pages/mayorista.html">Venta mayorista</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="./pages/contacto.html"> Contacto</a>      
+        </nav>
         
-                        <li>
-                                <a href="./pages/mayorista.html">Venta mayorista</a> 
-                        </li>   
-        
-                        <li>
-                                <a href="./pages/contacto.html"> Contacto</a> 
-                        </li>
-        
+    </header>
 
-                    </ul>
-        
-            
-                </nav>
-        </header>
-       
-        <main class="cuerpo">
+    <main class="container-fluid">
 
-            <h2>POTENCIA TU GYM CON NUESTROS PRODUCTOS</h2>
-            <h3>CONOCE TU POTENCIAL</h3>
+    <section class="row">
+            <div class="col-md-9 col-sm-12 text-center">
+                    <h3>POTENCIA TU GYM CON NUESTROS PRODUCTOS</h3>
+                
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide mx-auto " data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/novedades1.jpeg" class="d-block w-100 img-fluid" alt="promo1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/novedades2.jpeg" class="d-block w-100 img-fluid" alt="promo2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/novedades3.jpeg" class="d-block w-100 img-fluid" alt="promo3">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
 
-
-        <div>
-            <img src="img/novedades1.jpeg" alt="promo1">
-            <img src="img/novedades2.jpeg" alt="promo2">
-            <img src="img/novedades3.jpeg" alt="promo3">
-        </div>
-
-        
-        </main>
-        
-        <aside>
-        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.017163177009!2d-58.52297648543293!3d-34.65426948044637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc859cfa2adb3%3A0xa43c388a73d94b92!2sGimnasio%20New%20Training!5e0!3m2!1ses-419!2sar!4v1648923888316!5m2!1ses-419!2sar" width="425" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-        </aside>
-       
-        <section class="section1">
-
-            <img src="img/envios.jpg" alt="envios">
+            </div>
+            <aside class="col-md-3 col-sm-12 mx-auto">
+                <h3>
+                    20% DE DESCUENTO 
+                </h3>
+            </aside>
 
         </section>
 
-        <footer>
+      </main>
+
+      <footer class="row col-12 ">
             
-        <h1>BERKANA SPORT 2022 / berkana.sports@gmail.com / TODOS LOS DERECHOS RESERVADOS</h1>     
-        
-        </footer>
-
-    </div>
-
+        <h6 class="text-center">BERKANA SPORT 2022 / berkana.sports@gmail.com / TODOS LOS DERECHOS RESERVADOS</h6>     
+    </footer>
+      
+    
 </body>
 </html>
